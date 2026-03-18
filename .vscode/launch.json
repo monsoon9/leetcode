@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Debug (M1 Native)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang++ build active file",
+            "setupCommands": [
+                {
+                    "description": "限制单次显示的数组或容器元素数量，防止内存溢出",
+                    "text": "settings set target.max-children-count 50",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "限制字符串显示的最大长度",
+                    "text": "settings set target.max-string-summary-length 512",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
