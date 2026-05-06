@@ -1,7 +1,7 @@
-// #include<iostream>
-// using namespace std;
-// #include<vector>
-// #include<iostream>
+#include<iostream>
+using namespace std;
+#include<vector>
+#include<iostream>
 
 // class Solution {
 // public:
